@@ -54,6 +54,9 @@ function onTimerUpd({ days, hours, minutes, seconds }) {
   refs.dataHours.textContent = onZero(hours);
   refs.dataMinutes.textContent = onZero(minutes);
   refs.dataSeconds.textContent = onZero(seconds);
+  refs.btnStart.disabled = true;
+  refs.dataTime.disabled = true;
+
 };
 
 function onZero(value) {
